@@ -1,0 +1,11 @@
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waService.dll
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waService.pdb
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\Dapper.dll
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waEntity.dll
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waRepository.dll
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waEntity.pdb
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\waRepository.pdb
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\bin\Debug\Dapper.xml
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\obj\Debug\waService.csprojResolveAssemblyReference.cache
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\obj\Debug\waService.dll
+C:\Users\pablo\Documents\Visual Studio 2015\Projects\slnProductsCozy\waService\obj\Debug\waService.pdb
