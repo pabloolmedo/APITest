@@ -12,13 +12,14 @@ namespace waRepository
 {
     public class repositoryProducts
     {
+       public static string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
         public static List<Products> GetAllProducts()
         {
             try
             {
-                string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
+                string connectionString = _Dba;
                 string sp_GetAllProducts = "dbo.sp_GetAllProducts";
-                using (SqlConnection conex = new SqlConnection(_Dba))
+                using (SqlConnection conex = new SqlConnection(connectionString))
                 {
                     return conex.Query<Products>(sp_GetAllProducts, commandType: CommandType.StoredProcedure).ToList();
                 }
@@ -34,9 +35,9 @@ namespace waRepository
         {
             try
             {
-                string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
+                string connectionString = _Dba;
                 string sp_DeleteProductById = "dbo.sp_DeleteProductById";
-                using (SqlConnection conex = new SqlConnection(_Dba))
+                using (SqlConnection conex = new SqlConnection(connectionString))
                 {
                     DynamicParameters param = new DynamicParameters();
                     param.Add("@Id_Detail_Product", id);
@@ -55,9 +56,9 @@ namespace waRepository
         {
             try
             {
-                string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
+                string connectionString = _Dba;
                 string sp_AddProduct = "dbo.sp_AddProduct";
-                using (SqlConnection conex = new SqlConnection(_Dba))
+                using (SqlConnection conex = new SqlConnection(connectionString))
                 {
                     DynamicParameters param = new DynamicParameters();
                     param.Add("@Name", name);
@@ -77,9 +78,9 @@ namespace waRepository
         {
             try
             {
-                string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
+                string connectionString = _Dba;
                 string sp_AddProduct_Detail = "dbo.sp_AddProduct_Detail";
-                using(SqlConnection conex = new SqlConnection(_Dba))
+                using(SqlConnection conex = new SqlConnection(connectionString))
                 {
                     DynamicParameters param = new DynamicParameters();
                     param.Add("@Id_Product", products.Id_Product);
@@ -100,9 +101,9 @@ namespace waRepository
         {
             try
             {
-                string _Dba = @"Data Source=PABLO\SQLEXPRESS;Initial Catalog=CozyEnterprise;Integrated Security=True";
+                string connectionString = _Dba;
                 string sp_UpdateProduct_Detail = "dbo.sp_UpdateProduct_Detail";
-                using (SqlConnection conex = new SqlConnection(_Dba))
+                using (SqlConnection conex = new SqlConnection(connectionString))
                 {
                     DynamicParameters param = new DynamicParameters();
                     param.Add("@Id_Detail_Product", id);
